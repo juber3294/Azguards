@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Azguards Team
+ * @copyright Copyright (c) Azguards
+ * @package Featured Products for Magento 2
+ */-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_schema.xsd">
+    <referenceContainer name="content">
+        <block class="Magento\Catalog\Block\Product\ListProduct" name="featured.products" template="Azguards_FeaturedProducts::featured_products.phtml" ifconfig="featured_products/featured_products/featured_products_enable_disable"/>
+    </referenceContainer>
+</layout>

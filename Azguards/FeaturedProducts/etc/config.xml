@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <featured_products>
+            <featured_products>
+                <featured_products_enable_disable>0</featured_products_enable_disable>
+                <max_products_display>10</max_products_display>
+            </featured_products>
+        </featured_products>
+    </default>
+</config>

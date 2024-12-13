@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Author: Azguards Team
+ * Copyright: Azguards
+ * Package: Featured Products for Magento 2
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Binding interfaces to their implementations -->
+    <preference for="Azguards\FeaturedProducts\Api\FeaturedProductsInterface" type="Azguards\FeaturedProducts\Model\FeaturedProducts"/>
+<!--    <preference for="Azguards\FeaturedProducts\Api\Data\FeaturedProductInterface" type="Azguards\FeaturedProducts\Model\Data\FeaturedProduct"/>-->
+
+    <!--ListProduct block override-->
+    <preference for="Magento\Catalog\Block\Product\ListProduct" type="Azguards\FeaturedProducts\Block\FeaturedProducts"/>
+</config>

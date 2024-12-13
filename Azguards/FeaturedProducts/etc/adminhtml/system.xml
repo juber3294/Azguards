@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Author: Azguards Team
+ * Copyright: Azguards
+ * Package: Featured Products for Magento 2
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="featured_products" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Featured Products</label>
+            <tab>catalog</tab>
+            <resource>Azguards_FeaturedProducts::isFeatured</resource>
+            <group id="featured_products" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Featured Products Configuration</label>
+                <field id="featured_products_enable_disable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select" canRestore="1">
+                    <label>Enable Featured Products</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="max_products_display" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Maximum Featured Products to Display</label>
+                    <comment>Set the maximum number of Featured products to display on the frontend.</comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
